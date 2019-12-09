@@ -36,28 +36,28 @@ entrega:
 	$(CC) -L./$(BUILD)/ -Wall $(CFLAGS) -o $(BUILD)/revolucion_privada revolucion_privada.c -l$(NAME) -lhilolay -lcommons -lmuse -lutils_suse -I$(UTILS_SUSE) -L$(UTILS_SUSE) -L$(LIBMUSE)
 	
 archivo_de_swap_supermasivo:
-	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):/home/utnso/workspace/tp-2019-2c-Los-Trapitos/utils_suse ./$(BUILD)/archivo_de_swap_supermasivo
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):$(UTILS_SUSE):$(LIBMUSE) ./$(BUILD)/archivo_de_swap_supermasivo
 
 audiencia:
-	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):/home/utnso/workspace/tp-2019-2c-Los-Trapitos/utils_suse ./$(BUILD)/audiencia 
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):$(UTILS_SUSE):$(LIBMUSE) ./$(BUILD)/audiencia 
 
 caballeros_de_SisOp_Afinador:
-	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):/home/utnso/workspace/tp-2019-2c-Los-Trapitos/utils_suse ./$(BUILD)/caballeros_de_SisOp_Afinador
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):$(UTILS_SUSE):$(LIBMUSE) ./$(BUILD)/caballeros_de_SisOp_Afinador
 
 caballeros_de_SisOp_Solo:
-	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):/home/utnso/workspace/tp-2019-2c-Los-Trapitos/utils_suse ./$(BUILD)/caballeros_de_SisOp_Solo
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):$(UTILS_SUSE):$(LIBMUSE) ./$(BUILD)/caballeros_de_SisOp_Solo
 
 estres_compartido:
-	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):/home/utnso/workspace/tp-2019-2c-Los-Trapitos/utils_suse ./$(BUILD)/estres_compartido
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):$(UTILS_SUSE):$(LIBMUSE) ./$(BUILD)/estres_compartido
 
 estres_privado:
-	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):/home/utnso/workspace/tp-2019-2c-Los-Trapitos/utils_suse ./$(BUILD)/estres_privado
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):$(UTILS_SUSE):$(LIBMUSE) ./$(BUILD)/estres_privado
 
 recursiva:
-	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):/home/utnso/workspace/tp-2019-2c-Los-Trapitos/utils_suse ./$(BUILD)/recursiva
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):$(UTILS_SUSE):$(LIBMUSE) ./$(BUILD)/recursiva
 
 revolucion_compartida:
-	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):/home/utnso/workspace/tp-2019-2c-Los-Trapitos/utils_suse ./$(BUILD)/revolucion_compartida
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):$(UTILS_SUSE):$(LIBMUSE) ./$(BUILD)/revolucion_compartida
 
 revolucion_privada:
-	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):/home/utnso/workspace/tp-2019-2c-Los-Trapitos/utils_suse ./$(BUILD)/revolucion_privada
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD):$(UTILS_SUSE):$(LIBMUSE) ./$(BUILD)/revolucion_privada
